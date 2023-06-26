@@ -1,0 +1,34 @@
+
+POST http://localhost:3001/register
+Content-Type:application/json
+
+{
+  "username":"raviteja",
+  "password":"ravi9740",
+  "gender":"male",
+  "location":"khammam",
+  "education":"b,tech",
+  "phoneNumber":"9393455789"
+}
+
+
+###
+
+POST http://localhost:3001/login
+Content-Type:application/json
+
+
+###
+
+PUT http://localhost:3001/forgotPassword
+Content-Type:application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567"
+}
+###
+
+GET http://localhost:3001/get
+
+
