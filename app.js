@@ -116,7 +116,7 @@ app.put("/forgotPassword", async (request, response) => {
       response.status(400);
       response.send({ status: "Invalid user" });
     } else {
-      const hashedPassword = bcrypt.hash(password, 10);
+      const hashedPassword = await bcrypt.hash(password, 10);
       const query = `update
        activity set password="${hashedPassword}"
         where username="${username}";`;
